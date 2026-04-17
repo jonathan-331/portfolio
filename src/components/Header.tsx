@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 const nav = [
   { label: 'Work', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Resume', href: '/resume' },
 ]
 
 export default function Header() {
@@ -64,6 +64,14 @@ export default function Header() {
           >
             LinkedIn ↗
           </a>
+          <a
+            href="mailto:jonathan@jonathan-evans.com"
+            aria-label="Email Jonathan"
+            className="flex items-center text-ink/60 hover:text-ink transition-colors duration-200"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/img/Mail Icon.png" alt="" className="h-5 w-auto opacity-60 hover:opacity-100 transition-opacity duration-200" />
+          </a>
         </nav>
 
         {/* Mobile menu button */}
@@ -119,6 +127,14 @@ export default function Header() {
             className="font-sans text-base text-ink/60"
           >
             LinkedIn ↗
+          </a>
+          <a
+            href="mailto:jonathan@jonathan-evans.com"
+            className="font-sans text-base text-ink/60 flex items-center gap-2"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/img/Mail Icon.png" alt="" className="h-5 w-auto opacity-60" />
+            jonathan@jonathan-evans.com
           </a>
         </nav>
       </div>
