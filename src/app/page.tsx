@@ -15,13 +15,13 @@ export default function HomePage() {
         </FadeIn>
 
         <FadeIn delay={200}>
-          <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl text-ink leading-[1.02] max-w-3xl">
+          <h1 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-ink leading-[1.02] max-w-3xl">
             Jonathan<br />Evans
           </h1>
         </FadeIn>
 
         <FadeIn delay={350}>
-          <p className="font-sans text-lg md:text-xl text-ink/55 mt-8 max-w-xl leading-relaxed">
+          <p className="font-sans text-2xl md:text-3xl lg:text-4xl text-ink/55 mt-8 max-w-xl leading-relaxed">
             An experienced leader who drives creative,<br className="hidden md:block" />
             collaborative environments.
           </p>
