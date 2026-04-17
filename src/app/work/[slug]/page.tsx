@@ -89,17 +89,9 @@ export default function ProjectPage({ params }: Props) {
                     {section.title}
                   </h2>
 
-                  <div className="space-y-4">
-                    {section.body.map((para, j) => (
-                      <p key={j} className="font-sans text-base text-ink/65 leading-relaxed">
-                        {para}
-                      </p>
-                    ))}
-                  </div>
-
                   {section.images && section.images.length > 0 && (
                     <div
-                      className={`mt-10 ${
+                      className={`mb-10 ${
                         section.imageLayout === 'wide'
                           ? 'w-full'
                           : section.imageLayout === 'single'
@@ -125,6 +117,14 @@ export default function ProjectPage({ params }: Props) {
                       ))}
                     </div>
                   )}
+
+                  <div className="space-y-4">
+                    {section.body.map((para, j) => (
+                      <p key={j} className="font-sans text-base text-ink/65 leading-relaxed">
+                        {para}
+                      </p>
+                    ))}
+                  </div>
                 </section>
               </FadeIn>
             ))}
