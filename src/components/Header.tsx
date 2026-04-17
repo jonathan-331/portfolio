@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 const nav = [
-  { label: 'Work', href: '/' },
+  { label: 'Work', href: '/#work' },
   { label: 'About', href: '/about' },
   { label: 'Resume', href: '/resume' },
 ]
@@ -43,7 +43,7 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           {nav.map(({ label, href }) => {
-            const active = href === '/' ? pathname === '/' : pathname.startsWith(href)
+            const active = href === '/#work' ? pathname === '/' : pathname.startsWith(href)
             return (
               <Link
                 key={href}
@@ -106,7 +106,7 @@ export default function Header() {
       >
         <nav className="px-6 py-6 flex flex-col gap-5" aria-label="Mobile navigation">
           {nav.map(({ label, href }) => {
-            const active = href === '/' ? pathname === '/' : pathname.startsWith(href)
+            const active = href === '/#work' ? pathname === '/' : pathname.startsWith(href)
             return (
               <Link
                 key={href}
