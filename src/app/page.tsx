@@ -77,7 +77,7 @@ export default function HomePage() {
             const colSpan = isLarge ? 'md:col-span-2' : 'md:col-span-1'
 
             return (
-              <FadeIn key={project.slug} delay={80 * (i % 2)} className={colSpan}>
+              <FadeIn key={project.slug} delay={80 * (i % 2)} className={`${colSpan} h-full`}>
                 <ProjectCard project={project} size={isLarge ? 'large' : 'small'} />
               </FadeIn>
             )

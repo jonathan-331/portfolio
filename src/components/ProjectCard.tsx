@@ -10,7 +10,7 @@ export default function ProjectCard({ project, size }: ProjectCardProps) {
   return (
     <Link
       href={`/work/${project.slug}`}
-      className="project-card group block overflow-hidden rounded-lg bg-ink/5 relative"
+      className="project-card group block overflow-hidden rounded-lg bg-ink/5 relative h-full"
       style={{ minHeight: size === 'large' ? '420px' : '360px' }}
     >
       {/* Image */}
