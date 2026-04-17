@@ -20,9 +20,11 @@ export default function Footer() {
             href="https://www.linkedin.com/in/jonathanhevans/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-sans text-sm text-ink/50 hover:text-accent transition-colors duration-200"
+            aria-label="LinkedIn"
+            className="flex items-center text-ink/50 hover:text-accent transition-colors duration-200"
           >
-            LinkedIn ↗
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/img/LinkedIn Icon.png" alt="" className="h-5 w-auto opacity-50" />
           </a>
         </div>
 

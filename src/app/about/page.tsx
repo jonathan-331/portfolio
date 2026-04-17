@@ -99,7 +99,9 @@ export default function AboutPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 font-sans font-medium text-sm px-7 py-3.5 rounded-full border border-ink/15 text-ink/60 hover:border-ink/30 hover:text-ink transition-all duration-200"
               >
-                LinkedIn ↗
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/img/LinkedIn Icon.png" alt="" className="h-4 w-auto opacity-60" />
+                LinkedIn
               </a>
             </div>
           </FadeIn>

@@ -60,9 +60,11 @@ export default function Header() {
             href="https://www.linkedin.com/in/jonathanhevans/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-sans text-sm tracking-wide text-ink/60 hover:text-ink transition-colors duration-200"
+            aria-label="LinkedIn"
+            className="flex items-center text-ink/60 hover:text-ink transition-colors duration-200"
           >
-            LinkedIn ↗
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/img/LinkedIn Icon.png" alt="" className="h-5 w-auto opacity-60 hover:opacity-100 transition-opacity duration-200" />
           </a>
           <a
             href="mailto:jonathan@jonathan-evans.com"
@@ -124,9 +126,11 @@ export default function Header() {
             href="https://www.linkedin.com/in/jonathanhevans/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-sans text-base text-ink/60"
+            className="font-sans text-base text-ink/60 flex items-center gap-2"
           >
-            LinkedIn ↗
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/img/LinkedIn Icon.png" alt="" className="h-5 w-auto opacity-60" />
+            LinkedIn
           </a>
           <a
             href="mailto:jonathan@jonathan-evans.com"
