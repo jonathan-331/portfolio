@@ -75,23 +75,21 @@ export default function ResumePage() {
           <h1 className="font-display font-bold text-4xl md:text-5xl text-ink leading-tight">
             Jonathan Hilton Evans
           </h1>
-          <p className="font-sans text-base text-ink/50 mt-2">UX Design & Research · Seattle, WA</p>
+          <p className="font-sans text-base text-ink/50 mt-2">
+            UX Design & Research ·{' '}
+            <a href="mailto:jonathan@jonathan-evans.com" className="hover:text-accent transition-colors duration-200">jonathan@jonathan-evans.com</a>
+            {' '}· Seattle, WA
+          </p>
         </div>
       </FadeIn>
 
       {/* Summary */}
       <FadeIn delay={160}>
-        <p className="font-sans text-base text-ink/60 leading-relaxed max-w-2xl mb-8">
+        <p className="font-sans text-base text-ink/60 leading-relaxed max-w-2xl mb-16">
           UX Design & Research Leader with 10+ years building intuitive experiences across AI/ML,
           data-driven platforms, and enterprise software. Expertise in scaling inclusive design
           practices, leading global research, and transforming complex systems into user-first interfaces.
         </p>
-        <a
-          href="mailto:jonathan@jonathan-evans.com"
-          className="inline-flex items-center gap-2 font-sans font-medium text-sm px-7 py-3.5 rounded-full border-2 border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300 mb-16"
-        >
-          Get in touch
-        </a>
       </FadeIn>
 
       {/* Experience */}
