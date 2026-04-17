@@ -70,30 +70,28 @@ export default function ResumePage() {
   return (
     <div className="pt-32 pb-32 px-6 md:px-10 lg:px-16 max-w-4xl mx-auto">
       <FadeIn delay={100}>
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-6">
-          <div>
-            <p className="font-sans text-sm tracking-widest uppercase text-accent mb-3">Resume</p>
-            <h1 className="font-display font-bold text-4xl md:text-5xl text-ink leading-tight">
-              Jonathan Hilton Evans
-            </h1>
-            <p className="font-sans text-base text-ink/50 mt-2">UX Design & Research · Seattle, WA</p>
-          </div>
-          <a
-            href="mailto:jonathan@jonathan-evans.com"
-            className="inline-flex items-center gap-2 font-sans font-medium text-sm px-7 py-3.5 rounded-full border-2 border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300 self-start sm:self-auto"
-          >
-            Get in touch
-          </a>
+        <div className="mb-6">
+          <p className="font-sans text-sm tracking-widest uppercase text-accent mb-3">Resume</p>
+          <h1 className="font-display font-bold text-4xl md:text-5xl text-ink leading-tight">
+            Jonathan Hilton Evans
+          </h1>
+          <p className="font-sans text-base text-ink/50 mt-2">UX Design & Research · Seattle, WA</p>
         </div>
       </FadeIn>
 
       {/* Summary */}
       <FadeIn delay={160}>
-        <p className="font-sans text-base text-ink/60 leading-relaxed mb-16 max-w-2xl">
+        <p className="font-sans text-base text-ink/60 leading-relaxed max-w-2xl mb-8">
           UX Design & Research Leader with 10+ years building intuitive experiences across AI/ML,
           data-driven platforms, and enterprise software. Expertise in scaling inclusive design
           practices, leading global research, and transforming complex systems into user-first interfaces.
         </p>
+        <a
+          href="mailto:jonathan@jonathan-evans.com"
+          className="inline-flex items-center gap-2 font-sans font-medium text-sm px-7 py-3.5 rounded-full border-2 border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300 mb-16"
+        >
+          Get in touch
+        </a>
       </FadeIn>
 
       {/* Experience */}
