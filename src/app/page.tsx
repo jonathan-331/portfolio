@@ -22,7 +22,7 @@ export default function HomePage() {
 
         <FadeIn delay={350}>
           <p className="font-sans text-2xl md:text-3xl lg:text-4xl text-ink/55 mt-8 max-w-xl leading-relaxed">
-            An experienced leader who drives creative,<br className="hidden md:block" />
+            An experienced leader who drives creative,
             collaborative environments.
           </p>
         </FadeIn>
